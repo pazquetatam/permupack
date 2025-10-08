@@ -45,7 +45,7 @@ Instalación
 Para instalar el paquete en modo editable:
 
 ```bash
-git clone https://github.com/TU_USUARIO/permupack.git
+git clone https://github.com/pazquetatam/permupack.git
 cd permupack
 pip install -e .
 
