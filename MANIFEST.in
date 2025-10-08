@@ -1,0 +1,16 @@
+# Archivos de documentación
+include README.md
+include LICENSE
+
+# Datos y recursos dentro del paquete
+recursive-include permupack/inst *
+recursive-include permupack/images *
+
+# (Opcional) Incluir otros tipos de archivos si los agregas
+recursive-include permupack *.csv *.json *.txt *.yaml *.yml
+recursive-include permupack/images *.png *.jpg *.jpeg *.svg
+
+# Excluir carpetas innecesarias
+prune __pycache__
+prune *.egg-info
+prune tests

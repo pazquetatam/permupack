@@ -1,0 +1,19 @@
+===========================================
+ CHANGELOG - MiViñeta_PaulaAzqueta
+===========================================
+
+Version 1.0.0
+2025-09-28
+- Primera versión pública del proyecto.
+- Incluye notebook principal (MiViñeta_PaulaAzqueta.ipynb) y versión HTML.
+- Añadidas utilidades en perm_utils.py:
+  * Normalización y estandarización
+  * Discretización (Equal-Width, Equal-Frequency, manual)
+  * Entropía y utilidades varias
+- Añadida clase Permutation en Permutation.py para gestión de permutaciones:
+  * Inversa, composición, paridad, ciclos y matrices de permutación
+- Añadido módulo perm_plotting.py:
+  * Función dibujar_roc (curva ROC y AUC)
+  * Función dibujar_correlaciones (matriz de correlaciones)
+- Compatible con Python 3.x
+- Licencia MIT incluida
