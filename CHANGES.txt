@@ -17,3 +17,14 @@ Version 1.0.0
   * Función dibujar_correlaciones (matriz de correlaciones)
 - Compatible con Python 3.x
 - Licencia MIT incluida
+
+Version 1.1.0
+2025-10-08
+- Estructurado el proyecto como paquete Python instalable.
+  * Creación de `setup.py`, `__init__.py`, `MANIFEST.in`, `requirements.txt`.
+  * Compatibilidad con instalación editable (`pip install -e .`).
+- Ampliado `__all__` con nuevas funciones expuestas públicamente:
+  * `varianza`, `normalize01`, `standardize`, `plotFirstOrderMarginals`,
+    `dibujar_entropias`, `sample_even`, `symmetrize_mean_loop`, etc.
+- Clarificado README con dependencias y estructura del proyecto.
+- Generadas carpetas `build/`, `dist/` y metadatos (`egg-info`) para distribución.

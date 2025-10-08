@@ -1,19 +1,35 @@
+===========================================
+ Proyecto: MiViñeta_PaulaAzqueta / permupack
+===========================================
+
 Descripción
 -----------
-Este proyecto contiene un cuaderno Jupyter (exportado también a HTML) 
-en el que se desarrollan distintos ejemplos de estadística, 
-discretización, permutaciones y visualización de datos en Python. 
+Este proyecto contiene tanto un cuaderno Jupyter (exportado también a HTML) 
+como un paquete Python (`permupack`) en el que se desarrollan ejemplos de estadística, 
+discretización, permutaciones y visualización de datos. 
+
 El enfoque es didáctico: mostrar de forma clara cómo funcionan 
 estas técnicas mediante mini-ejemplos inspirados en un "mini-festival".
 
 Contenido
 ---------
-- MiViñeta_PaulaAzqueta.ipynb   -> Notebook principal (código y explicaciones)
-- MiViñeta_PaulaAzqueta.html    -> Versión exportada del notebook en formato HTML
-- perm_utils.py                 -> Funciones auxiliares de normalización, estandarización,
-                                   permutaciones, discretización, entropía y utilidades varias
-- Permutation.py                -> Clase Permutation para gestionar y operar con permutaciones
-- perm_plotting.py              -> Funciones de visualización (ROC, correlaciones, etc.)
+Estructura principal del repositorio:
+
+- **notebooks/**
+  - `MiViñeta_PaulaAzqueta.ipynb` → Notebook principal (código y explicaciones).
+  - `MiViñeta_PaulaAzqueta.html` → Versión exportada en HTML.
+
+- **permupack/** (paquete Python)
+  - `perm_utils.py` → Funciones auxiliares (normalización, estandarización, 
+    permutaciones, discretización, entropía, utilidades varias).
+  - `Permutation.py` → Clase `Permutation` para gestionar y operar con permutaciones.
+  - `perm_plotting.py` → Funciones de visualización (curva ROC, correlaciones, etc.).
+  - `__init__.py` → Inicialización del paquete.
+
+- **test/** → Pruebas unitarias.  
+- **build/**, **dist/**, **permupack.egg-info/** → Carpetas generadas automáticamente al instalar.  
+- **setup.py** → Script de instalación del paquete.  
+- **LICENSE**, **README.md**, **CHANGES**, **MANIFEST.in** → Archivos de metadatos del proyecto.
 
 Dependencias
 ------------
@@ -24,21 +40,12 @@ El código requiere Python 3.x y las siguientes librerías:
 - seaborn
 - scikit-learn
 
-Uso
----
-1. Abrir el notebook `MiViñeta_PaulaAzqueta.ipynb` con Jupyter.
-2. Ejecutar las celdas para reproducir los ejemplos:
-   - Permutaciones: generación, composición, ciclos, paridad
-   - Discretización: equal-width, equal-frequency, manual
-   - Normalización y estandarización
-   - Visualización: curva ROC, heatmaps de correlación, gráficos de línea y barras
-3. También puede visualizarse el contenido sin ejecutar código desde el archivo HTML.
+Instalación
+-----------
+Para instalar el paquete en modo editable:
 
-Autoría
--------
-Trabajo desarrollado por Paula Azqueta en el marco de la asignatura 
-"Software Matemático y Estadístico".
+```bash
+git clone https://github.com/TU_USUARIO/permupack.git
+cd permupack
+pip install -e .
 
-Fecha
------
-Septiembre 2025
